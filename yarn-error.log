@@ -1,8 +1,8 @@
 Arguments: 
-  /home/nervado/.asdf/installs/nodejs/10.16.1/bin/node /home/nervado/.asdf/installs/nodejs/10.16.1/.npm/bin/yarn add bcrypt.js
+  /home/nervado/.asdf/installs/nodejs/10.16.1/bin/node /home/nervado/.asdf/installs/nodejs/10.16.1/.npm/bin/yarn add jasonwebtoken
 
 PATH: 
-  /home/nervado/.asdf/installs/nodejs/10.16.1/bin:/home/nervado/.asdf/installs/nodejs/10.16.1/.npm/bin::/home/nervado/.asdf/shims:/home/nervado/.asdf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/nervado/Android/Sdk/tools:/home/nervado/Android/Sdk/platform-tools
+  /home/nervado/.asdf/installs/nodejs/10.16.1/bin:/home/nervado/.asdf/installs/nodejs/10.16.1/.npm/bin::/home/nervado/.asdf/shims:/home/nervado/.asdf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/nervado/Android/Sdk/tools:/home/nervado/Android/Sdk/platform-tools:/home/nervado/Android/Sdk/tools:/home/nervado/Android/Sdk/platform-tools
 
 Yarn version: 
   1.17.3
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/bcrypt.js: Not found
+  Error: https://registry.yarnpkg.com/jasonwebtoken: Not found
       at Request.params.callback [as _callback] (/home/nervado/.asdf/installs/nodejs/10.16.1/.npm/lib/node_modules/yarn/lib/cli.js:66830:18)
       at Request.self.callback (/home/nervado/.asdf/installs/nodejs/10.16.1/.npm/lib/node_modules/yarn/lib/cli.js:140464:22)
       at Request.emit (events.js:198:13)
@@ -36,6 +36,7 @@ npm manifest:
       "dev": "nodemon src/server.js"
     },
     "dependencies": {
+      "bcryptjs": "^2.4.3",
       "express": "^4.17.1",
       "pg": "^7.12.1",
       "pg-hstore": "^2.3.3",
@@ -263,6 +264,11 @@ Lockfile:
       isobject "^3.0.1"
       mixin-deep "^1.2.0"
       pascalcase "^0.1.1"
+  
+  bcryptjs@^2.4.3:
+    version "2.4.3"
+    resolved "https://registry.yarnpkg.com/bcryptjs/-/bcryptjs-2.4.3.tgz#9ab5627b93e60621ff7cdac5da9733027df1d0cb"
+    integrity sha1-mrVie5PmBiH/fNrF2pczAn3x0Ms=
   
   binary-extensions@^1.0.0:
     version "1.13.1"
