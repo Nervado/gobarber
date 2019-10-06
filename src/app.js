@@ -1,5 +1,5 @@
 import 'dotenv/config';
-
+import cors from 'cors';
 import express from 'express';
 import path from 'path';
 import Youch from 'youch';
@@ -20,6 +20,7 @@ class App {
   }
 
   middlewares() {
+    this.server.use(cors());
     this.server.use(Sentry.Handlers.requestHandler());
     this.server.use(express.json());
     this.server.use(
@@ -45,9 +46,5 @@ class App {
     });
   }
 }
-
-
-
-
 
 export default new App().server;
